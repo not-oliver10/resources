@@ -1,5 +1,12 @@
-import numpy as np
-from math import sin, cos, sqrt, pi
+import os
+try:
+    import numpy as np
+    from math import sin, cos, sqrt, pi
+except
+    os.sys("pip install numpy as np")
+    os.sys("pip install math")
+    from math import sin, cos, sqrt, pi
+
 
 def truss(A):
     """Computes mass and stress for the 10-bar truss problem
